@@ -7,17 +7,29 @@
 #define UP 0
 #define DOWN 1
 
+/**
+ * enum bool - Enumberate Boolean Vals
+ * @false: 0
+ * @true: 1
+ */
 typedef enum bool
 {
-        false = 0,
-        true
+	false = 0,
+	true
 } bool;
+
+/**
+ * struct listint_s - A linked list
+ * @n: integer
+ * @prev: Address to previous node
+ * @next: Address to next element
+ */
 
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 void print_array(const int *array, size_t size);
